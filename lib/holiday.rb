@@ -31,7 +31,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do |season, holiday|
      puts "#{season.capitalize}:"
      holiday.each do |holiday, item|
-       puts "  #{holiday.to_s.split("_").map {|i| i.capitalize}.join(" ")}: #{item.join(", ")}"
+ 
   # Split will separate holiday names like Memorial Day 
   # to_s makes stuff into strings. with split, it's multiple strings
   # capitalize makes each string that is split capitalized.
